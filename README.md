@@ -3,7 +3,7 @@
 ## Forma de entrega
 * Cada punto debe ser entregado en un archivo independiente
 
-* El nombre de cada archivo debe ser ser `tp4-ej` seguido del numero de ejercicio mas `.py` (el primer ejercicio sera entonces `tp4-ej1.py`
+* El nombre de cada archivo debe ser ser `tp4ej` seguido del numero de ejercicio mas `.py` (el primer ejercicio sera entonces `tp4ej1.py`
 
 * Cada función a implementar requiere escribir un programa que haga uso de la función de manera interactiva.
 
@@ -34,7 +34,7 @@ Las tres funciones al rechazar el ingreso de valores incorrectos, deben levantar
 
 ``` python
 def ingreso_entero_reintento(mensaje, cantidad_reintentos=5):
-def ingreso_entero_restringido(mensaje,valor_minimo=0, valor_maximo=10):
+def ingreso_entero_restringido(mensaje, valor_minimo=0, valor_maximo=10):
 
 class IngresoIncorrecto(Exception):
     """Esta es la Excepcion para el ingreso incorrecto"""
@@ -65,6 +65,13 @@ import tp4ej1 as soporte
 
 soporte.ingreso_entero("Hola Mundo")
 ```
+Otra opción para hacer uso de la funcion es la de traer solo esa función.
+```python
+from tp4ej1 import ingreso_entero
+#despues lo puede usar directamente.
+ingreso_entero("Hola Mundo")
+```
+
 
 ### 2. Suma lenta
 
@@ -147,7 +154,7 @@ Escribir una función que indique con True si una palabra o frase ingresada se t
 Palíndromo, es si se lee igual de derecha a izquierda que de izquierda a derecha.
 
 ``` python
-def es_palindromo(texto)
+def es_palindromo(texto):
 ```
 
 ## Plantilla de entrega individual
